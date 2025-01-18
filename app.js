@@ -35,7 +35,17 @@ function obtenerAmigo(){
   }else {
     randomIndex = Math.floor(Math.random() * friendsList.length)
   }
+  return friendsList[randomIndex]
 }
 
-
-
+function sortearAmigo(){
+  let resultado = obtenerAmigo()
+  if(resultado){
+    document.getElementById('listaAmigos').innerHTML = ""
+    let elementoResultado = document.getElementById('resultado')
+    elementoResultado.innerHTML = `El amigo sorteado es: ${resultado}`
+  }else{
+    let elementoResultado = document.getElementById('resultado')
+    elementoResultado.innerHTML = ""
+  }
+}
