@@ -9,6 +9,7 @@ function agregarAmigo() {
     mostrarListaAmigos()
 
   }
+  obtenerAmigo()
 }
 
 function mostrarListaAmigos(){
@@ -24,6 +25,13 @@ function mostrarListaAmigos(){
 
 function limpiarInput(){
   document.querySelector("#amigo").value = ""
+}
+
+
+function obtenerAmigo(){
+  if(friendsList.length === 0){
+    alert("Debes ingresar un amigo")
+  }
 }
 
 
