@@ -31,7 +31,10 @@ function limpiarInput(){
 function obtenerAmigo(){
   if(friendsList.length === 0){
     alert("Debes ingresar un amigo")
+  }else {
+    let randomindex = Math.floor(Math.random() * friendslist.length)
   }
+
 }
 
 
