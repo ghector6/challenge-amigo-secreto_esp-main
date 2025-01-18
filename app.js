@@ -1,5 +1,4 @@
 let friendsList = [];
-let elementoHTML = document.getElementById("listaAmigos")
 
 function agregarAmigo() {
   let nombreAmigo = document.getElementById("amigo").value
@@ -20,6 +19,11 @@ function mostrarListaAmigos(){
     li.innerHTML = friendsList[i]
     elementoHTML.appendChild(li)
   }
+  limpiarInput()
+}
+
+function limpiarInput(){
+  document.querySelector("#amigo").value = ""
 }
 
 
