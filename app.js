@@ -10,6 +10,7 @@ function agregarAmigo() {
 
   }
   obtenerAmigo()
+  document.getElementById("amigo").focus()
 }
 
 function mostrarListaAmigos(){
